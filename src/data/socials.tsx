@@ -3,7 +3,7 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "../components/icons";
 export const SOCIALS = [
   {
     label: "GitHub",
-    href: "https://github.com/Kei-K23",
+    href: "https://github.com/arkarmin-gg",
     icon: GitHubIcon,
   },
   {

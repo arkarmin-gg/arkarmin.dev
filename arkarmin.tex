@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in LaTeX
+% Based on: https://github.com/sb2nov/resume
+% Adapted for: Arkar Min - AI Engineer / Backend & LLM/RAG Systems
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+% ATS-friendly font setup: Helvetica-like sans-serif, clean and highly legible.
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% Section formatting
+% Section headings use ~14pt equivalent for a clear ATS-friendly hierarchy.
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+% Body/list text stays around 10--11pt using \small for readability and one-page density.
+\newcommand{\resumeItem}[1]{
+  \item\small{#1 \vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\LARGE Arkar Min} \\ \vspace{2pt}
+    \small AI Engineer $|$ Backend Engineer \\ \vspace{1pt}
+    \small 09756192218 $|$ \href{mailto:arkar.dev.kei@gmail.com}{\underline{arkar.dev.kei@gmail.com}} $|$
+    \href{https://github.com/arkarmin-gg}{\underline{GitHub}} $|$
+    \href{https://www.linkedin.com/in/arkar-min-97410b308/}{\underline{LinkedIn}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{AI Engineer and Backend Software Engineer with 3+ years of experience building scalable backend platforms, production REST APIs, distributed systems and LLM-powered systems. Experienced in RAG pipelines, embeddings, vector search and AI agents systems. Strong background in secure API design, database architecture, multi-tenant SaaS systems, payment platforms, and practical AI product development from architecture to production deployment.}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{AI / LLM / RAG}{: RAG Pipelines, Chunking, Embeddings, Vector Search, pgvector, Qdrant, Semantic Search, Prompt Engineering, AI Agents, Tool Calling, LLM Workflow Orchestration, Reranking, Knowledge Retrieval} \\
+     \textbf{LLM APIs \& Frameworks}{: OpenAI API, AWS Rekognition, Openrouter API, Mastra, LangChain, LangGraph Orchestration, Llamaindex} \\
+     \textbf{Backend}{: Python, FastAPI, SQLAlchemy, Alembic, Pydantic, TypeScript, Node.js, NestJS, ExpressJS, TypeORM} \\
+     \textbf{Data / Cloud / DevOps}{: PostgreSQL, MySQL, MongoDB, Redis, Docker, Git, GitHub Actions, AWS S3, AWS Rekognition, BullMQ, Socket.IO}
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Origin Business Solutions}{March 2025 -- Present}
+      {Software Engineer (Backend, AI)}{On-site / Myanmar}
+      \resumeItemListStart
+        \resumeItem{Design and develop secure, scalable, multi-tenant backend services and REST APIs for production business systems, improving maintainability, reliability, and high performance.}
+        \resumeItem{Researched, developed, and integrated data pipelines, RAG systems, LLM-powered features, and AI agents into customer software and ERP systems.}
+        \resumeItem{Develop end-to-end RAG pipelines covering ingestion, preprocessing, chunking, embedding generation, vector indexing, retrieval, reranking, and response generation.}
+        \resumeItem{Managed Linux-based servers and configured CI/CD pipelines for faster, safer, and more reliable deployments.}
+        \resumeItem{Managed and developed AWS infrastructure and Linux-based servers and VPS, including setup, maintenance, deployment, monitoring, and security auditing.}
+        \resumeItem{.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AlphaX}{July 2024 -- March 2025}
+      {Full-stack Developer}{On-site / Myanmar}
+      \resumeItemListStart
+        \resumeItem{Developed and led full-stack web applications, CMS dashboards, and e-commerce platforms with secure backend APIs and maintainable frontend integrations.}
+        \resumeItem{Built high-performance backend services using TypeScript, Node.js, REST APIs, database modeling, and modular architecture practices.}
+        \resumeItem{Applied microservices-oriented designs to improve scalability, maintainability, and separation of business domains while debugging production issues under fast-moving client requirements.}
+        \resumeItem{Collaborated with product and UI/UX teams to deliver full-stack solutions from requirement analysis to production deployment.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Biz24 AI E-commerce SaaS Platform} $|$ \emph{Python, FastAPI, LangChain, PostgreSQL, Qdrant, Redis, BullMQ, Socket.IO}}{}
+          \resumeItemListStart
+            \resumeItem{Built a production-ready multi-tenant AI customer support platform enabling each shop to run a customizable LLM-powered support agent with RAG, persistent memory, multilingual responses, and real-time chat.}
+            \resumeItem{Designed shop-scoped retrieval using PDF/text ingestion, document chunking, OpenAI-compatible embeddings, Qdrant vector search, and hybrid product search with PostgreSQL full-text search and Reciprocal Rank Fusion.}
+            \resumeItem{Integrated agent tools for product questions, order status, cart management, checkout assistance, cancellation workflows, support-ticket escalation, and multi-channel web, Telegram, and Facebook Messenger support.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{MKI AI Material \& Asset Management System} $|$ \emph{FastAPI, Python, OpenAI, AWS, AWS Rekognition, MySQL}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an AI-powered image-based asset classification backend using FastAPI, GPT-4o-mini, AWS Rekognition Custom Labels, S3, MySQL, SQLAlchemy, Alembic, and Pydantic for a Japanese construction company.}
+            \resumeItem{Implemented LLM image reasoning to generate structured Japanese descriptions for shape, material, texture, pattern, color, and use case, then matched results against internal PDF knowledge records.}
+            \resumeItem{Built ML data pipelines for S3 image organization, presigned URLs, dataset cleanup, Rekognition model startup, custom label detection, and Ground Truth-compatible training metadata updates.}
+          \resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{CRM \& Sales Agentic System} $|$ \emph{NodeJS, NestJS, PostgreSQL, TypeORM, Python, LangChain, pgvector}}{}
+  \resumeItemListStart
+    \resumeItem{Built a modular CRM backend for managing leads, customers, quotations, contracts, sales pipelines, bulk uploads, activity logs, analytics reports, user access, and document services.}
+    \resumeItem{Designed an AI-powered quotation description generation architecture using LLMs, LangChain, pgvector, and RAG to generate professional quotation item descriptions from historically approved CRM data.}
+    \resumeItem{Implemented a Sales AI Agent system to support human sales teams with lead analysis, quotation assistance, follow-up suggestions, customer context retrieval, and sales workflow automation.}
+  \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{OBS Payment Gateway Backend} $|$ \emph{NodeJS, NestJS, TypeScript, PostgreSQL, TypeORM}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a production-grade payment gateway backend unifying KBZPay, AYA Pay, Wave Pay, MPU, MMQR, APlus Pay, Visa, Mastercard, and JCB through a single REST API.}
+            \resumeItem{Implemented centralized checkout sessions, API-key authentication, JWT-based request signing, duplicate order prevention, merchant redirects, provider callbacks, and transaction inquiry workflows.}
+            \resumeItem{Built transaction lifecycle management, MDR/service-fee calculations, RBAC/CASL permissions, OTP login, audit logs, webhook trails, provider request logs, and merchant dashboard analytics.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Fair Price Taxi - Ride Hailing System} $|$ \emph{NodeJS, NestJS, PostgreSQL, Redis, BullMQ, Socket.IO, Firebase, AWS S3}}{}
+          \resumeItemListStart
+            \resumeItem{Built a production-grade ride-hailing backend supporting passenger, driver, and admin workflows including authentication, ride booking, real-time dispatch, transactions, notifications, and analytics.}
+            \resumeItem{Implemented real-time driver dispatch with Socket.IO, Redis, and BullMQ, including location tracking, auto-reject timeouts, ride status updates, push notifications, and driver eligibility checks.}
+            \resumeItem{Designed dynamic pricing for car grades, distance-based fares, peak-hour rules, special-location fees, add-ons, penalties, multi-destination fees, and fare rounding.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{University Student \& Payment Backend System} $|$ \emph{NodeJS, NestJS, TypeScript, PostgreSQL}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered centralized university systems for student registration, payment workflows, admissions, academic structures, online examinations, financial transactions, and bulk data processing.}
+            \resumeItem{Built external student validation APIs, dynamic fee calculation, multi-gateway aggregation, asynchronous webhooks, JWT/RBAC security, 2FA, Turnstile, activity logging, and high-performance ExcelJS pipelines.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Greenwich}{2022 -- 2025}
+      {Bachelor of Science in Computing}{}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
