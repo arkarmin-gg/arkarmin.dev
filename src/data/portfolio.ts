@@ -15,6 +15,10 @@ export const HIGHLIGHTS = [
     label: "years shipping backend and AI systems",
   },
   {
+    value: "10+",
+    label: "custom software, enterprise systems and ERP systems",
+  },
+  {
     value: "RAG",
     label: "pipelines with embeddings and vector search",
   },
